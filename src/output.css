@@ -746,10 +746,6 @@ video {
   height: auto;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-1 {
   width: 0.25rem;
 }
@@ -924,8 +920,24 @@ video {
   --tw-bg-opacity: 0.9;
 }
 
-.bg-\[url\(\'https\:\/\/img\.freepik\.com\/free-photo\/copy-space-boy-carrying-stack-books_23-2148469957\.jpg\?t\=st\=1735576607\~exp\=1735580207\~hmac\=f25a536f01077e81262d1d3122237a5796323453841f7f9550fcbe76dc123939\&w\=1380\'\)\] {
-  background-image: url('https://img.freepik.com/free-photo/copy-space-boy-carrying-stack-books_23-2148469957.jpg?t=st=1735576607~exp=1735580207~hmac=f25a536f01077e81262d1d3122237a5796323453841f7f9550fcbe76dc123939&w=1380');
+.bg-\[url\(\'\/img\/heroSection\.jpg\'\)\] {
+  background-image: url('/img/heroSection.jpg');
+}
+
+.bg-\[url\(\'img\/mobileheroSection\.jpg\'\)\] {
+  background-image: url('img/mobileheroSection.jpg');
+}
+
+.bg-\[url\(\'\.img\/mobileheroSection\.jpg\'\)\] {
+  background-image: url('.img/mobileheroSection.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/mobileheroSection\.jpg\'\)\] {
+  background-image: url('./img/mobileheroSection.jpg');
+}
+
+.bg-\[url\(\'\/img\/mobileheroSection\.jpg\'\)\] {
+  background-image: url('/img/mobileheroSection.jpg');
 }
 
 .bg-cover {
@@ -934,14 +946,6 @@ video {
 
 .bg-center {
   background-position: center;
-}
-
-.bg-right {
-  background-position: right;
-}
-
-.bg-left {
-  background-position: left;
 }
 
 .bg-no-repeat {
@@ -955,6 +959,11 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-8 {
@@ -1299,12 +1308,8 @@ video {
     row-gap: 2.5rem;
   }
 
-  .sm\:bg-right {
-    background-position: right;
-  }
-
-  .sm\:bg-left {
-    background-position: left;
+  .sm\:bg-\[url\(\'img\/mobileheroSection\.jpg\'\)\] {
+    background-image: url('img/mobileheroSection.jpg');
   }
 }
 
@@ -1426,12 +1431,12 @@ video {
     background-color: transparent;
   }
 
-  .md\:bg-right {
-    background-position: right;
+  .md\:bg-\[url\(\'\/img\/heroSection\.jpg\'\)\] {
+    background-image: url('/img/heroSection.jpg');
   }
 
-  .md\:bg-center {
-    background-position: center;
+  .md\:bg-\[url\(\'img\/heroSection\.jpg\'\)\] {
+    background-image: url('img/heroSection.jpg');
   }
 
   .md\:p-0 {
@@ -1537,16 +1542,12 @@ video {
     width: 40rem;
   }
 
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:gap-10 {
