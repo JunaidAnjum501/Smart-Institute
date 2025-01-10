@@ -6,15 +6,27 @@
     <link rel="stylesheet" href="output.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>smart</title>
 </head>
 <body>
-    
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+<button onclick="scrollToTop()" class="fixed bottom-20 right-4 z-10 md:bottom-20  md:right-14">
+  <img class="h-14  w-14" src="./img/arrow_13426858.png" alt="" srcset="">
+</button>
+
   <!-- Navbar & HeroSection start -->
     <!-- Navbar section-->
     <header
       class="md:bg-[url('img/heroSection.jpg')]
-       bg-no-repeat bg-cover bg-center object-fill  h-auto relative bg-[url('img/mobileheroSection.jpg')] "
+       bg-no-repeat bg-cover bg-center object-fill z-20 h-auto relative bg-[url('img/mobileheroSection.jpg')] "
       id="#Home"
     >
     <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
